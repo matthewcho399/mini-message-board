@@ -2,8 +2,6 @@ const { Router } = require("express");
 
 const newRouter = Router();
 
-newRouter.get("/", (req, res) =>
-  res.send("Hello this is the new messages page")
-);
+newRouter.get("/", (req, res) => res.render("new"));
 
 module.exports = newRouter;
