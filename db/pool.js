@@ -11,8 +11,6 @@ pool.on("error", (err) => {
 });
 
 pool.connect((err) => {
-  console.log(process.env.DATABASE_PUBLIC_URL);
-  console.log(process.env.DATABASE_URL);
   if (err) {
     console.error("Failed to connect to PostgreSQL:", err);
   } else {

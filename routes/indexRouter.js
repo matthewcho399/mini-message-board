@@ -2,7 +2,7 @@ const { Router } = require("express");
 const controller = require("../controllers/controller");
 const indexRouter = Router();
 
-indexRouter.get("/", (req, res) => res.send("hi"));
+indexRouter.get("/", controller.getAllMessages);
 
 indexRouter.get("/new", controller.createMessageGet);
 indexRouter.post("/new", controller.createMessagePost);
